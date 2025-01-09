@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ayush Tripathi - Software Engineer | Java, Microservices, Backend Developer">
+    <meta name="description" content="Ayush Tripathi | Software Engineer | Java, Microservices, Backend Development">
     <meta name="author" content="Ayush Tripathi">
     <title>Ayush Tripathi | Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Reset some default styles */
         * {
@@ -17,33 +17,37 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            background: #f4f4f4;
+            background-color: #f4f6f9;
+            color: #333;
         }
 
-        /* Header */
+        /* Header Section */
         header {
-            background-color: #2C3E50;
+            background-color: #2A3D66;
             color: white;
+            padding: 120px 20px;
             text-align: center;
-            padding: 40px 0;
+            border-bottom: 5px solid #4C6A8C;
         }
 
         header h1 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 4rem;
+            font-weight: 600;
         }
 
         header p {
             font-size: 1.2rem;
             font-weight: 400;
+            margin-top: 10px;
+            letter-spacing: 1px;
         }
 
         /* Navigation Bar */
         nav {
             background-color: #34495E;
-            padding: 10px 0;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -53,116 +57,123 @@
             list-style-type: none;
             display: flex;
             justify-content: center;
-            padding: 0;
         }
 
         nav ul li {
-            margin: 0 20px;
+            margin: 0 30px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 1.2rem;
-            padding: 8px 12px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: #2980b9;
-            border-radius: 4px;
+            background-color: #2980B9;
         }
 
-        /* About Section */
+        /* Section Styling */
         section {
-            padding: 50px 20px;
+            padding: 80px 20px;
             max-width: 1100px;
             margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
         }
 
         section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #2C3E50;
-        }
-
-        section p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            line-height: 1.5;
-        }
-
-        /* Projects Section */
-        #projects {
-            padding: 50px 20px;
-            background: #ecf0f1;
-            min-height: 100vh;
-        }
-
-        #projects h2 {
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             text-align: center;
-            color: #2C3E50;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            color: #2A3D66;
         }
 
-        .project-card {
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 20px;
-            width: 48%;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-
-        .project-card h3 {
-            font-size: 1.8rem;
-            color: #34495E;
-        }
-
-        .project-card p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            line-height: 1.5;
-        }
-
-        .project-card a {
-            display: inline-block;
-            margin-top: 15px;
-            color: #2980b9;
+        .content {
             font-size: 1.1rem;
-            text-decoration: none;
+            color: #7F8C8D;
+            line-height: 1.7;
+            text-align: center;
         }
 
-        .project-card a:hover {
+        /* Work Experience & Projects Section */
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #34495E;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #2980B9;
+            font-size: 1.5rem;
+        }
+
+        /* Project Section */
+        .projects {
+            margin-top: 50px;
+        }
+
+        .project-item {
+            background-color: white;
+            padding: 30px;
+            border-left: 5px solid #2980B9;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-item h3 {
+            font-size: 2rem;
+            color: #2A3D66;
+            margin-bottom: 15px;
+        }
+
+        .project-item p {
+            font-size: 1.1rem;
+            color: #7F8C8D;
+            line-height: 1.6;
+        }
+
+        .project-item a {
+            color: #2980B9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-item a:hover {
             text-decoration: underline;
         }
 
-        .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        /* Footer */
+        /* Footer Section */
         footer {
-            background-color: #2C3E50;
+            background-color: #34495E;
             color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            margin-top: 100px;
         }
 
         footer a {
-            color: #2980b9;
+            color: #2980B9;
             text-decoration: none;
         }
 
@@ -178,68 +189,82 @@
     <!-- Header Section -->
     <header>
         <h1>Ayush Tripathi</h1>
-        <p>Software Engineer | Java, Microservices | Passionate About Building Scalable Solutions</p>
+        <p>Software Engineer | Java, Microservices, Backend Development</p>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Ayush Tripathi, a passionate Software Engineer with expertise in backend development and building scalable systems. I specialize in Java, Microservices, Spring Boot, and cloud technologies. I love solving complex problems and creating efficient, maintainable solutions. My goal is to work on impactful projects that improve systems and enhance user experiences.</p>
+        <p class="content">
+            Hello! I'm Ayush Tripathi, a passionate Software Engineer with a strong foundation in **Java**, **Spring Boot**, **Microservices**, and backend systems. I enjoy solving complex problems and building scalable, high-performance applications. Currently working at **Amdocs**, I focus on improving system security, backend performance, and automation.
+        </p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Developed and optimized **backend microservices** for high-traffic platforms using **Java**, **Spring Boot**, and **MySQL**.</li>
+            <li>Led the migration of sensitive data storage from **Cassandra DB** to **MongoDB**, improving security and compliance with regulatory standards.</li>
+            <li>Created and deployed automated pipelines using **GitLab API**, **Spring Boot**, and **Cron Jobs**, saving 10+ hours of manual work per week.</li>
+            <li>Implemented **Microsoft Azure Authentication** for enhanced security in internal tools and applications.</li>
+        </ul>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
 
-        <div class="project-container">
+        <div class="projects">
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-item">
                 <h3>Swift - Movie Ticket Booking System</h3>
-                <p>Developed a comprehensive movie ticket booking platform with real-time availability updates, designed to handle dynamic user traffic and ensure seamless transactions during peak hours.</p>
-                <a href="https://github.com/yourusername/swift-project">View Project on GitHub</a>
+                <p>
+                    A **real-time movie ticket booking system** built to handle high demand and dynamic inventory. Implemented **thread synchronization** to prevent race conditions, ensuring seamless transactions. Used **Java**, **Spring Boot**, and **MySQL**.
+                </p>
+                <a href="https://github.com/yourusername/swift-project" target="_blank">View on GitHub</a>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-item">
                 <h3>Microservices Architecture for Online Shopping App</h3>
-                <p>Designed and implemented a scalable microservices-based architecture for an e-commerce app, featuring distinct services for product management, order processing, notifications, and inventory control.</p>
-                <a href="https://github.com/yourusername/online-shopping">View Project on GitHub</a>
+                <p>
+                    Designed and implemented a **scalable microservices architecture** for an online shopping platform using **Spring Boot**, **Apache Kafka**, and **MongoDB**. Integrated **Netflix Eureka** for service discovery and **API Gateway** for routing.
+                </p>
+                <a href="https://github.com/yourusername/online-shopping" target="_blank">View on GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Here are some of the technologies I have worked with:</p>
-        <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px;">
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">Java</li>
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">Spring Boot</li>
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">MySQL</li>
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">Docker</li>
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">ReactJS</li>
-            <li style="background: #fff; padding: 20px; border-radius: 8px; width: 150px; text-align: center;">Kafka</li>
-        </ul>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to collaborate, or discuss a potential opportunity, feel free to reach out to me via email or LinkedIn!</p>
-        <p>Email: <a href="mailto:ayushtripathy019@gmail.com">ayushtripathy019@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ayushiiism" target="_blank">Ayush Tripathi</a></p>
+        <h2>Contact</h2>
+        <p class="content">
+            Feel free to connect with me for any opportunities, collaborations, or inquiries.
+        </p>
+        <p class="content">
+            Email: <a href="mailto:ayushtripathy019@gmail.com">ayushtripathy019@gmail.com</a>
+        </p>
+        <p class="content">
+            LinkedIn: <a href="https://www.linkedin.com/in/ayushiiism" target="_blank">linkedin.com/in/ayushiiism</a>
+        </p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ayush Tripathi | <a href="https://github.com/ayushiiism" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/ayushiiism" target="_blank
+        <p>&copy; 2025 Ayush Tripathi | <a href="https://github.com/ayushiiism" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/ayushiiism" target="_blank">LinkedIn</a></p>
+    </footer>
+
+</body>
+
+</html>
