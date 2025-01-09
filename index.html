@@ -4,157 +4,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Tripathi - Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Ayush Tripathi - Software Engineer | Java, Microservices, Backend Developer">
+    <meta name="author" content="Ayush Tripathi">
+    <title>Ayush Tripathi | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f7fc;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        /* Header */
         header {
             background-color: #2C3E50;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px 0;
         }
 
         header h1 {
-            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
         }
 
-        .container {
-            width: 80%;
-            margin: 30px auto;
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
         }
 
+        /* Navigation Bar */
+        nav {
+            background-color: #34495E;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980b9;
+            border-radius: 4px;
+        }
+
+        /* About Section */
         section {
-            margin-bottom: 50px;
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
         }
 
-        h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            font-size: 24px;
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2C3E50;
         }
 
-        .content {
-            margin-top: 20px;
+        section p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            line-height: 1.5;
         }
 
-        .content p {
-            line-height: 1.6;
+        /* Projects Section */
+        #projects {
+            padding: 50px 20px;
+            background: #ecf0f1;
+            min-height: 100vh;
         }
 
-        .projects-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
+        #projects h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 40px;
         }
 
-        .project-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+        .project-description {
+            margin-bottom: 30px;
         }
 
-        .project-card h3 {
-            margin-top: 0;
+        .project-description h3 {
+            font-size: 2rem;
+            color: #34495E;
         }
 
-        .tech-stack {
-            font-style: italic;
-            color: #3498db;
+        .project-description p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            line-height: 1.5;
         }
 
+        .project-description a {
+            color: #2980b9;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        .project-description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Work Experience Section */
+        #experience {
+            padding: 50px 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        #experience h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+
+        .work-experience {
+            margin-bottom: 30px;
+        }
+
+        .work-experience h3 {
+            font-size: 1.8rem;
+            color: #34495E;
+        }
+
+        .work-experience p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+
+        .work-experience ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer Section */
         footer {
             background-color: #2C3E50;
             color: white;
             text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            margin-top: 40px;
         }
+
+        footer a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <header>
         <h1>Ayush Tripathi</h1>
-        <p>Software Engineer | Java | Microservices | Backend Development</p>
+        <p>Software Engineer | Java, Microservices | Passionate About Building Scalable Solutions</p>
     </header>
 
-    <div class="container">
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="content">
-                <p>
-                    I'm a passionate software engineer specializing in **microservices architecture**, **backend development**, and **scalable system design**. I am currently working as an **Associate Software Engineer** at **Amdocs**, where I focus on developing and optimizing APIs, enhancing system security, and automating team workflows.
-                </p>
-            </div>
-        </section>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Work Experience Section -->
-        <section id="work">
-            <h2>Work Experience</h2>
-            <div class="content">
-                <p><strong>Amdocs — Associate Software Engineer</strong> | Aug 2023 – Present</p>
-                <ul>
-                    <li>Developed and optimized **RESTful APIs** in **Java** and **Spring Boot** for a scalable microservices architecture.</li>
-                    <li>Led the implementation of **US Data Encryption** for secure handling of sensitive information and compliance with regulatory standards.</li>
-                    <li>Created an automation pipeline reducing manual efforts by 10 hours per week, improving productivity across the team.</li>
-                </ul>
-            </div>
-        </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ayush Tripathi, a passionate Software Engineer with expertise in backend development and building scalable systems. I specialize in Java, Microservices, Spring Boot, and cloud technologies. I love solving complex problems and creating efficient, maintainable solutions. My goal is to work on impactful projects that improve systems and enhance user experiences.</p>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-list">
-                <div class="project-card">
-                    <h3>Microservices Architecture for Online Shopping App</h3>
-                    <p>This project involved designing a scalable **microservices-based architecture** for an online shopping application, integrating services for product management, order processing, and inventory control.</p>
-                    <p class="tech-stack"><strong>Tech Stack</strong>: Java, Spring Boot, Apache Kafka, Docker, MongoDB, MySQL</p>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-                <div class="project-card">
-                    <h3>Swift - Movie Ticket Booking System</h3>
-                    <p>Developed **Swift**, a movie ticket booking platform that provides real-time ticket availability updates and mitigates race conditions to enhance user experience.</p>
-                    <p class="tech-stack"><strong>Tech Stack</strong>: Java, Spring Boot, ReactJS, MySQL</p>
-                </div>
-            </div>
-        </section>
+        <div class="project-description">
+            <h3>Swift - Movie Ticket Booking System</h3>
+            <p>“Swift” is a state-of-the-art movie ticket booking platform designed to streamline the entire booking process. The system integrates real-time updates for ticket availability, ensuring that users always receive accurate and timely information. I designed the system to handle high traffic during peak hours while ensuring the accuracy and integrity of bookings.</p>
+            <p>The biggest technical challenge was handling race conditions during ticket reservations. By implementing robust thread synchronization and utilizing advanced inventory management algorithms, I ensured that tickets were reserved without errors even during high-demand situations.</p>
+            <p>Tech Stack: Java, Spring Boot, ReactJS, MySQL</p>
+            <a href="https://github.com/yourusername/swift-project">View Project on GitHub</a>
+        </div>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="content">
-                <p><strong>National Institute of Technology, Jamshedpur</strong> | Master’s in Computer Applications</p>
-                <p>CGPA: 8.43/10</p>
-            </div>
-        </section>
+        <div class="project-description">
+            <h3>Microservices Architecture for Online Shopping App</h3>
+            <p>This project involved designing and implementing a comprehensive microservices architecture for a scalable online shopping platform. The system was built to handle millions of concurrent users, with distinct services for product management, order processing, inventory control, and user notifications.</p>
+            <p>I integrated **Netflix Eureka** for service discovery, implemented **circuit breakers** for fault tolerance, and used **Apache Kafka** for real-time communication between services. These technologies ensured that the platform could scale efficiently while maintaining high availability and resilience during failures.</p>
+            <p>Tech Stack: Java, Spring Boot, Apache Kafka, Docker, MongoDB, MySQL</p>
+            <a href="https://github.com/yourusername/online-shopping">View Project on GitHub</a>
+        </div>
+    </section>
 
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <div class="content">
-                <ul>
-                    <li>AIR 564 Rank in **NIMCET 2020**.</li>
-                    <li>Maximum rating of **1700+** on **CodeChef**.</li>
-                    <li>Solved **1000+ coding problems** on various platforms like **LeetCode**, **GeeksforGeeks**, and **Codeforces**.</li>
-                </ul>
-            </div>
-        </section>
-    </div>
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
 
+        <div class="work-experience">
+            <h3>Amdocs - Associate Software Engineer</h3>
+            <p><strong>Aug 2023 – Present</strong></p>
+            <ul>
+                <li>Developed and optimized RESTful APIs using **Java** and **Spring Boot** for microservices architecture, focusing on scalability and high performance.</li>
+                <li>Led the **migration from Cassandra to MongoDB**, ensuring secure data handling with advanced encryption methods to comply with **USGCI regulations**.</li>
+                <li>Built a **pipeline automation tool** to automate repetitive deployment tasks, saving **10 hours per week** and improving the team's overall efficiency.</li>
+                <li>Integrated **Microsoft Azure authentication** to bolster security across internal systems, improving user access control and reducing risk.</li>
+            </ul>
+        </div>
+
+        <div class="work-experience">
+            <h3>Freelance Developer</h3>
+            <p><strong>Jan 2022 – Jul 2023</strong></p>
+            <ul>
+                <li>Designed and built scalable **backend systems** for various e-commerce and content management platforms using **Java**, **Spring Boot**, and **MySQL**.</li>
+                <li>Collaborated with clients to gather requirements and provide custom solutions, enhancing application performance by optimizing SQL queries and refactoring inefficient code.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/ayush-tripathi" target="_blank" style="color: #3498db;">LinkedIn</a> or contact me at <a href="mailto:ayushtripathy019@gmail.com" style="color: #3498db;">ayushtripathy019@gmail.com</a></p>
+        <p>&copy; 2025 Ayush Tripathi | <a href="https://github.com/ayushiiism" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/ayushiiism" target="_blank">LinkedIn</a></p>
     </footer>
 
 </body>
